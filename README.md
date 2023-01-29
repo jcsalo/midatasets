@@ -3,6 +3,13 @@
 
 python library to interact with a local nifti medical image datasets.
 
+### Edits
+
+requirements.txt:  original version of requirements.txt listed pandas=1.2.2
+When version number was deleted, Docker server was able to be run form
+sarcopeniai-ai.
+
+
 ### Setup
 
 ```
@@ -62,7 +69,7 @@ To match a labelmap/segmentation with its associated image, the image and its la
 need to have the same prefix.
 
 Images that haven't been resampled should be placed in the `native` folder. Any resampled
-images should go in the corresponding folders, e.g. 
+images should go in the corresponding folders, e.g.
 
 - 1mm isotropic: `subsampled1mm`,
 - 1mm in-plane isotropic and 4mm slice thickness: `subsampled1-1-4mm`
@@ -99,5 +106,5 @@ dataset.generate_resampled(spacing=2)
 
 
 
-`spacing=0` loads images from the `native` folder, `spacing=1`, from  `subsampled1mm`, and `spacing=[1,1,4]`, 
+`spacing=0` loads images from the `native` folder, `spacing=1`, from  `subsampled1mm`, and `spacing=[1,1,4]`,
 from `subsampled1-1-4mm`.

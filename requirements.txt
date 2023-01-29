@@ -3,4 +3,9 @@ loguru
 pydantic
 pyyaml
 smart_open
-pandas==1.2.2
+
+## :::::::::::::::::::::::::::::::::::
+## Modified in order to make Docker work from Sarcopenia-ai
+# pandas==1.2.2
+pandas
+## :::::::::::::::::::::::::::::::::::
